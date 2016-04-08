@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app='route'>
+    <head>
+        <title>Edgemont Floors</title>
+        <base href="/Ebunch/Edgemont_Floors/">
+    </head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    
+        <script src="js/angular.min.js"></script>
+        <script src="js/angular-route.js"></script>
+        <script src="js/newapp.js"></script>
+        <script src="js/controller.js"></script>
+        <script src="js/js.js"></script>
+    
+        <link rel="stylesheet" type="text/css" href="css/css.css">
+    
+    <body>
+
+        <div class="nav">
+            <button id="homeBut" type="button">Home</button>
+            <button id="prodBut" type="button">Products</button>
+            <button id="gallBut" type="button">Gallery</button>
+            <button id="conBut" type="button">Contact</button>
+        </div>
+        
+        <div ng-view></div>
+        
+    </body>
+
+    </html>
