@@ -5,7 +5,7 @@
         <base href="/Ebunch/Edgemont_Floors/">
     </head>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    
+        <link rel="icon" type="image/png" href="img/logov1.png">
         <script src="js/angular.min.js"></script>
         <script src="js/angular-route.js"></script>
         <script src="js/newapp.js"></script>
@@ -13,14 +13,25 @@
         <script src="js/js.js"></script>
     
         <link rel="stylesheet" type="text/css" href="css/css.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     
     <body>
-
-        <div class="nav">
-            <button id="homeBut" type="button">Home</button>
-            <button id="prodBut" type="button">Products</button>
-            <button id="gallBut" type="button">Gallery</button>
-            <button id="conBut" type="button">Contact</button>
+        <div class="row">
+            <div class="col-xs-1"></div>
+            <div class="col-xs-3"><img src="img/logov1.png" width="50" height="60" alt="Logo"></div>
+            <div class="col-xs-7 text-right">Contact</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4"></div>
+            <nav class="navbar col-xs-6" role="navigation">
+                <ul class="nav navbar-nav">
+                    <li class="current"><a href="#home">Home</a></li>
+                    <li><a href="#product">Product</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#designer">Designer</a></li>
+                <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
         
         <div ng-view></div>

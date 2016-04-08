@@ -38,7 +38,7 @@ App.config([
                 controller:"user"
             }
         )*/.otherwise({
-            redirectTo: "index.html"
+            templateUrl:"view/home.html"
         })
     }
 ]);
